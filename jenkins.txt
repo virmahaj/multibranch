@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the source code
+                checkout scm
+            }
+        }
+        stage('Build') {
+            steps {
+                echo "Building sample the project"
+                // Add your build commands here (e.g., mvn, gradle, npm)
+            }
+        }
+        stage('Test') {
+            steps {
+                echo "Running tests"
+                // Add your test commands here (e.g., npm test, mvn test)
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "Deploying the project"
+                // Add your deploy commands here (e.g., deploy to a server or cloud service)
+            }
+        }
+    }
+}
