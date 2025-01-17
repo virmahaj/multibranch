@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "Building sample the project"
+                echo "Building sample5252525252525 the project"
                 // Add your build commands here (e.g., mvn, gradle, npm)
             }
         }
